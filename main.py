@@ -47,3 +47,77 @@ def mod_5(x):
 # it returns the argument x that maximizes key(x) (aka the 'argmax').
 print(max(100, 51, 14,  key=mod_5))
 
+
+#Lists
+primes = [2, 3, 5, 7]
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupitor"]
+hands = [
+    ['J', 'K', 'L'],
+    ['M', 'N', 'O']
+    ]
+
+print("primes = " , primes)
+print("Plants = ", planets)
+
+#Slicing
+# Take only three first elements
+planets[0:3]
+planets[:3]
+
+# list elements after third element
+print(planets[3:])
+
+# all the planets except 1st and last
+print(planets[1:-1])
+
+# the last three planets
+print(planets[-3:])
+
+# changing lists
+# let's say we want to rename Mars to Malacandra
+planets[3] = 'Malacandra'
+print(planets)
+
+# length of a list
+print(len(planets))
+
+# sorted, returns a sorted version od list
+print(sorted(planets))
+
+#sum, give summation of numbers
+print(sum(primes))
+
+# List methods
+primes.append(9) # add element to end of the list
+print(primes)
+
+# remove last element
+primes.pop()
+print(primes)
+
+# searching list
+print(primes.index(3))
+
+print(3 in primes)
+print('Earth' in planets)
+
+#help(planets)
+
+
+
+# Tuples
+# Tuples is exactly the same as lists but
+# 1. the syntax for creating them is () not []
+t = (1, 2, 3)
+
+# 2. they can not modify (they are immutable)
+# t[1] = 100
+
+
+# swapping two variables in python
+a = 1
+b = 0
+a, b = b, a
+print(a,b)
+
+
